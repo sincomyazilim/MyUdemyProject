@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+@*Contaxt Index Sayfası*@
+@await Component.InvokeAsync("_HeadPartial")@*v90 degıstrdık*@
+<body>
+<div class="container-xxl bg-white p-0">
+    @await Component.InvokeAsync("_SpinerPartial")
+
+    @await Component.InvokeAsync("_NavBarPartial")
+
+   
+
+    @await Component.InvokeAsync("_ContactCoverPartial")@*v91*@
+
+    @await Html.PartialAsync("/Views/Contact/SendMessage.cshtml")
+
+    @await Html.PartialAsync("/Views/Default/_SubscribePartial.cshtml")
+
+    @await Component.InvokeAsync("_FooterPartial")
+
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+</div>
+@await Component.InvokeAsync("_ScriptPartial")
+</body>

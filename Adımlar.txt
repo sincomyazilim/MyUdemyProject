@@ -1,0 +1,31 @@
+Api Testi ve swager yapýldý
+temayý ekleyelým výdeo 39 býttý
+
+
+Proje býttýkten sonra eklenecekler 30.04.2023
+mail atarken verýler gýden verýtabanýn akaydedýlebýlýr
+odalarýn ve ya herkengý býr tablonu n resýmlerýný duzenleyebýlrýýz
+
+CategoryContactMessage crud iþlemleri    yapýldý bu kýýsm
+
+
+142 výdeo
+not:iliþk ýký tabloyu apýden cekmek ýstersen NewtonsoftJson paketýný apý projesýne kuuryoruz
+sonra bunu apý projesýnýn startup dosyasýna 
+services.AddControllers().AddNewtonsoftJson(options=>options.SerializerSettings.ReferenceLoopHandling=Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
+eklýyoýruz
+
+
+ON KISIMDA EKSIKLER
+SOSYAL MEDYA LINKLERINI BAGLA
+ODALARIMIZ DETAY EKLENECEK
+
+FOOTER LINK VERME
+
+AÞAÐI DOGRU KAYAN MENU
+
+arka kýsým
+ sayfalara baslýk eklenecek
+ arama bolumu yapýlacak
+ ýs menu navbar kýsmý yapýlacak

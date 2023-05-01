@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace HotelProject.WebUI.Dtos.SendMessage
+{
+    public class ResultAdminSendBoxDto
+    {//107
+        public int SendMessageId { get; set; }
+        public string ReceiverName { get; set; }//alıcı adı
+        public string ReceiverMail { get; set; }//alıcı mail
+        public string SenderName { get; set; }
+        public string SenderMail { get; set; }
+        public string Title { get; set; }
+        public string Content { get; set; }
+        public DateTime Date { get; set; }
+
+    }
+}

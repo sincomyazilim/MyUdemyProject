@@ -1,0 +1,52 @@
+﻿@model List<ResultAppUserDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="active-member">
+                    <div class="table-responsive">
+                        <table class="table table-xs mb-0">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Ad Soyad</th>
+                                    <th>Şehir</th>
+                                    <th>Çalıştığı Bölüm</th>
+                                    <th>Sil</th>
+                                    <th>Güncelle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    count++;
+
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>
+                                            <img src="@item.ImagesUrl" class=" rounded-circle mr-3" alt="">
+                                            @item.Name  @item.Surname
+                                        </td>
+                                        <td>@item.WorkLocation.WorkLocationCity</td>
+                                        <td>@item.WorkDepartment</td>
+                                        <td><a href="/AdminUser/DeleteUser/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+                                        <td><a href="/AdminUser/UpdateUser/@item.Id" class="btn btn-outline-primary">Güncelle</a></td>
+                                    </tr>
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<td><a href="/Register/AddRegister/" class="btn btn-outline-primary">Yeni Kullanıcı Ekle</a></td>
